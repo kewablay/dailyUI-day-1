@@ -1,0 +1,10 @@
+.section {
+  padding: 2rem;
+  padding-block: 3.5rem;
+  margin-block: 5rem;
+  border-radius: 2.5rem !important
+}
+
+.section-title {
+  margin-bottom: 4rem;
+}
