@@ -6,44 +6,51 @@
     <title>Card Component Challenge</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
   </head>
-  <body class="bg-[#FCFFFF] mx-5 max-w-[1440px] mx-auto">
-    <nav class="flex justify-between py-4">
-      <div class="logo">
-        <img src="images/logo.svg" alt="logo" />
+  <body class="bg-[#FCFFFF] mx-5 max-w-[1248px] mx-auto">
+    <nav class="flex justify-between items-center py-4 px-5">
+      <div class="logo trancking-[-2px] font-bold">
+        <!-- <img src="images/logo.svg" alt="logo" /> -->
+         Carrrds
       </div>
 
-      <button class=" border border-black px-5 transition-all duration-300 rounded-full hover:bg-black hover:text-white">Buy me a cofee 🍵</button>
+      <button class=" border border-black p-2 px-4  sm:px-5 transition-all duration-300 rounded-full hover:bg-black hover:text-white">Buy me a cofee 🍵</button>
     </nav>
-    <main>
-      <section class="hero-section space-y-10 my-20">
+    <main class="sm:px-10 md:px-4">
+      <section class="hero-section space-y-10 my-20 md:mb-48">
         <div class="hero-text text-center">
           <span
             class="p-1 rounded-full bg-[#FFDAC9] text-sm px-4 mb-3 inline-block"
           >
             Card component variations
           </span>
-          <h1 class="text-4xl font-bold tracking-[-2px]">
+          <h1 class="text-4xl leading-[125%] md:text-5xl lg:text-6xl md:max-w-[40rem] md:mx-auto md:leading-[120%] lg:leading-[125%] font-bold tracking-[-1px] px-2">
             Reusable Card Component Showcase
           </h1>
-          <p class="text-gray-400 mt-3 text-md">
+          <p class="text-gray-400 mt-3 text-md lg:text-lg px-2">
             Explore various card components designed for different purposes
           </p>
         </div>
 
         <div class="hero-image flex justify-center items-center">
-          <img src="images/hero.png" alt="hero image" />
+          <img src="images/hero.png" alt="hero image" class="md:w-[85%] lg:w-[75%]"/>
         </div>
       </section>
 
       <!-- Ecommerce product card section -->
-      <section class="section ecommerce-product-card bg-[#F6F6F6] rounded-xl">
-        <h3 class="text-center section-title text-xl font-bold">
+      <section class="section ecommerce-product-card bg-[#F6F6F6] rounded-xl ">
+        <h3 class="text-center section-title text-2xl font-bold">
           Ecommerce Product Card
         </h3>
 
         <div
-          class="ecommerce-cards-container grid md:grid-cols-2 gap-10 md:w-[800px] mx-auto"
+          class="ecommerce-cards-container grid md:grid-cols-2 gap-10  md:max-w-[800px] mx-auto"
         >
           <!-- product card -->
           <div
@@ -133,10 +140,10 @@
 
       <!-- News article card section -->
       <section class="section ecommerce-product-card bg-[#F3F6E8] rounded-xl">
-        <h3 class="text-center section-title text-xl font-bold">News Article Card</h3>
+        <h3 class="text-center section-title text-2xl font-bold">News Article Card</h3>
 
         <div
-          class="article-cards-container grid md:grid-cols-2 gap-10 md:w-[800px] mx-auto"
+          class="article-cards-container grid md:grid-cols-2 gap-10  md:max-w-[800px] mx-auto"
         >
           <!-- article card -->
           <div class="article-card">
@@ -175,12 +182,12 @@
           <!-- article card -->
           <div class="article-card">
             <div class="image">
-              <img src="images/news1.png" alt="news-image" />
+              <img src="images/news2.png" alt="news-image" />
             </div>
 
             <div class="news-info space-y-4 mt-5">
               <h3 class="title text-xl font-bold">
-                Democrats approve rules for likely Harris nomination
+                Citizens undergo demonstration for unpaid residence in the US
               </h3>
               <p class="text-sm text-gray-500">
                 Four days into the most consequential week of Kamala Harris'
@@ -212,12 +219,12 @@
 
       <!-- Profile card section -->
       <section class="section ecommerce-product-card bg-[#EDF6F9] rounded-xl">
-        <h3 class="text-center section-title text-xl font-bold">
+        <h3 class="text-center section-title text-2xl font-bold">
             Profile Card
         </h3>
 
-        <div class="profile-card-container grid md:grid-cols-8  gap-10  mx-auto">
-            <div class="user-info bg-white md:col-span-3 rounded-xl p-5">
+        <div class="profile-card-container grid md:grid-cols-8  gap-10  md:max-w-[800px] mx-auto">
+            <div class="user-info bg-white md:col-span-3 rounded-2xl p-5">
                 <div class="user-image mb-5 rounded-lg overflow-hidden">
                     <img src="images/user.png" class="w-full" alt="user-image" />
                 </div>
@@ -230,14 +237,14 @@
                     <p class="flex items-center text-gray-500"><img src="images/location.svg" alt="."> <span class="ml-1">London, UK</span></p>
                 </div>
 
-                <button class="flex gap-2 items-center bg-black text-white px-4 py-2 rounded-lg mx-auto mt-5">
+                <button class="flex gap-2 items-center bg-black text-white px-4 py-3 rounded-lg mx-auto mt-5 hover:bg-gray-800 hover:scale-95 transition-all duration-300">
                     <img src="images/message.svg" alt="message" />
                     Get in touch
                 </button>
             </div>
 
 
-            <div class="profile-info p-5 bg-white md:col-span-5 rounded-lg">
+            <div class="profile-info p-5 px-8 bg-white md:col-span-5 rounded-2xl">
                 <div class="about">
                     <h4 class="text-xl font-bold mb-5">About</h4>
                     <p>Experienced Photographer with a demonstrated history of working in the computer software industry. Skilled in PHP, Dart, ReactJS, and Software Development as a whole. Strong arts and design professional with a Bachelor of Science (BSc) focused on Computer Science and Engineering from the University of Mines and Technology.</p>
@@ -251,11 +258,11 @@
                         </div>
                         <div class="flex items-center gap-2">
                             <img src="images/mail.svg" alt="company" />
-                            <p class="ml-1">johnDoe1242@gmail.com</p>
+                            <p class="ml-1">johnDoe@gmail.com</p>
                         </div>
                         <div class="flex items-center gap-2">
                             <img src="images/employees.svg" alt="company" />
-                            <p class="ml-1">Employees: 100 - 10000</p>
+                            <p class="ml-1">Size: 100 - 10000</p>
                         </div>
                     </div>
                 </div>
@@ -267,12 +274,12 @@
 
       <!-- Event card section -->
       <section class="section ecommerce-product-card bg-[#F5F1ED] rounded-xl">
-        <h3 class="title text-xl font-bold section-title text-center">
+        <h3 class="title text-2xl font-bold section-title text-center">
           Event card
         </h3>
 
         <div
-          class="event-cards-container grid md:grid-cols-2 gap-10 md:w-[800px] mx-auto"
+          class="event-cards-container grid md:grid-cols-2 gap-10  md:max-w-[800px] mx-auto"
         >
             <!-- event card -->
             <div class="event-card">
@@ -282,7 +289,7 @@
 
                 <div class="event-info space-y-4 mt-5">
                 <h3 class="title text-xl font-bold">
-                    Democrats approve rules for likely Harris nomination
+                  Build 2.0 Andrea Marquez
                 </h3>
                 <div class="flex items-center justify-between">
                     <div class="flex items-center gap-1 text-[#A374FF]">
@@ -302,12 +309,12 @@
             <!-- event card -->
             <div class="event-card">
                 <div class="image">
-                <img src="images/event1.png" alt="event image" />
+                <img src="images/event2.png" alt="event image" />
                 </div>
         
                 <div class="event-info space-y-4 mt-5">
                 <h3 class="title text-xl font-bold">
-                Democrats approve rules for likely Harris nomination
+                  Citsa Awards and Dinner Night 23
                 </h3>
                 <div class="flex items-center justify-between">
                 <div class="flex items-center gap-1 text-[#A374FF]">
